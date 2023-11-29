@@ -1,0 +1,29 @@
+﻿@model vb.swifbac.com.Models.ScoreEntry
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+ .editor-field-score
+ {
+ 	width:30px;
+ }
+
+.table-striped>tr:nth-child(odd)
+{
+   background-color:red;
+}
+</style>
+<h2>SCORES [@Model.GameDate.ToShortDateString()]</h2>
+<div class="panel panel-default">
+@using (@Html.BeginForm("Update", "Scores", FormMethod.Post))
+{
+ <table class="table table-striped" style="border:1">    
+   @Html.EditorFor(m => m.Games)
+  </table>
+    
+    <br />
+    <br />
+    <br />
+    <input type="submit" value="Save" />     
+}
+</div>

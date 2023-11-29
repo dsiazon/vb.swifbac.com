@@ -1,0 +1,38 @@
+﻿@model vb.swifbac.com.Models.Game
+
+@Html.HiddenFor(model => model.HomeTeamId)
+@Html.HiddenFor(model => model.VisitorTeamId)
+@Html.HiddenFor(model => model.Id)
+@Html.HiddenFor(model => model.LeagueId)
+@Html.HiddenFor(model => model.DivisionId)
+
+
+<tr>
+    <td>
+        @Model.Time
+    </td>
+    <td>
+        @Model.CourtName
+    </td>
+    <td>
+        @Model.DivisionName
+    </td>
+    <td>
+
+        @Model.HomeTeamName :
+    </td>
+    <td>
+        @Html.EditorFor(m => m.HomeTeamScore, new { htmlAttributes = new { @class = "editor-field-score" } })
+    </td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td>
+        @Html.HiddenFor(model => model.VisitorTeamId)
+        @Model.VisitorTeamName :
+    </td>
+    <td>
+        @Html.EditorFor(m => m.VisitorTeamScore, new { htmlAttributes = new { @class = "editor-field-score" } })
+    </td>
+    <td>
+        @Html.EditorFor(m => m.IsFinal, new { htmlAttributes = new { @class = "editor-field-score" } })
+    </td>
+</tr>

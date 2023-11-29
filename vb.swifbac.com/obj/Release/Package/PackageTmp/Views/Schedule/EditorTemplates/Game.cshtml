@@ -1,0 +1,29 @@
+﻿@model vb.swifbac.com.Models.Game
+
+@Html.HiddenFor(x => x.Id)
+@Html.HiddenFor(x => x.LeagueId)
+@Html.HiddenFor(x => x.GameDate)
+@Html.HiddenFor(x => x.SortOrder)
+
+<tr height="35px">
+    <td style="text-align:center">
+        @Model.SortOrder
+    </td>
+    <td>
+        @Html.DropDownListFor(model => model.Time, new SelectList(ViewBag.GameTimes, "Key", "Value"), "Select")
+    </td>
+    <td>
+        @Html.DropDownListFor(model => model.DivisionId, new SelectList(ViewBag.Divisions, "Key", "Value"), "Select")
+    </td>
+    <td>
+        @Html.DropDownListFor(model => model.CourtId, new SelectList(ViewBag.Courts, "Key", "Value"), "Select")
+    </td>
+    <td>
+        @Html.DropDownListFor(model => model.HomeTeamId, new SelectList(ViewBag.Teams, "Key", "Value"), "Select")
+    </td>
+    <td>
+        @Html.DropDownListFor(model => model.VisitorTeamId, new SelectList(ViewBag.Teams, "Key", "Value"), "Select")
+    </td>
+    <td>&nbsp;</td>
+</tr>
+

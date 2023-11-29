@@ -1,0 +1,739 @@
+﻿
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>SWIFBAC 2018 SPRING TOURNAMENT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Fitness Freak Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <style>
+        .blink_me 
+        {
+            animation: blinker 1s linear infinite;
+            font-weight : bold
+        }
+
+        @keyframes blinker {50% {opacity: 0;}}
+        
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- testimonials -->
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/owl.theme.css" type="text/css" media="all">
+    <!-- flexslider -->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/smoothbox.css" type='text/css' media="all" />
+     <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <!-- //web-fonts -->
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="main_section" id="home">
+
+        <div class="agile-banner_nav">
+          
+                   
+                  
+            <nav class="navbar navbar-default">
+                <div class="navbar-header navbar-left">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                  
+
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <nav class="link-effect-2" id="link-effect-2">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="index.html" class="effect-3">Home</a>
+                            </li>
+                            <li>
+                                <a href="#games" class="effect-3 scroll">Upcoming Games</a>
+                            </li>                                               
+                            <li>
+                                <a href="#standings" class="effect-3 scroll">Team Standings</a>
+                            </li>
+                             <li>
+                                <a href="#sponsors" class="effect-3 scroll">Our Sponsors</a>
+                            </li>   
+                             <li>
+                                <a href="#gallery" class="effect-3 scroll">Photo Gallery</a>
+                            </li> 
+                             <li>
+                                <a href="#events" class="effect-3 scroll">Events</a>
+                            </li> 
+                             <li>
+                                <a href="#comms" class="effect-3 scroll">2018 Committees</a>
+                            </li>   
+                             <li>
+                                <a href="#about" class="effect-3 scroll">About Us</a>
+                            </li>   
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- banner slider -->
+        <div class="slider">
+            <ul class="rslides" id="slider">
+                <li>
+                    <div class="w3ls-banner-image  w3ls-banner-image1">
+                        <div class="layer">
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3ls-banner-image  w3ls-banner-image2">
+                        <div class="layer">
+                          
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3ls-banner-image  w3ls-banner-image3">
+                        <div class="layer">
+                            
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- //Slider -->
+
+    <!-- recent games -->
+     <div class="services text-center section" id="games">
+        <div class="container">
+            <h3 class="title1">Game Schedules on </h3><br /><h2><span style='font-family:Verdana' id='currdate'></span></h2>
+             
+            <div class="services-head">
+              <div class="clearfix"> </div>
+              <h4>For check Payments, please make it payable to SWIFBAC. We're also accepting credit cards.</h4>
+     <div class="clearfix"> </div>
+            <table class="table table-striped" id="tblgames">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Time</th>
+      <th scope="col">Division</th>
+      <th scope="col">Court</th>
+      <th scope="col">Teams</th>
+    </tr>
+  </thead>
+ <tbody>
+ 
+ </tbody>
+</table>
+               
+            </div>
+        </div>
+    </div>
+      <!-- //recent games -->
+   
+    <!-- standings -->
+    <div class="section about-bottomgrid" id="standings" style="background-image: url('Images/g3.jpg')">
+        <div class="container">
+          <h3 class="title1" style="color:White">Team Standings</h3>
+            <div class="services-head">
+   
+   
+   
+   <table class="table table-dark" id="tblStandings">
+   <thead style="background-color:#ff9900">
+    
+  </thead>
+ <tbody>
+ 
+ </tbody>
+</table>
+           
+
+            
+            </div>
+        </div>
+    </div>
+     <!-- //standings -->
+
+         <!-- gallery -->
+    <div class="gallery section" id="gallery">
+        <div class="container">
+            <h3 class="title1">Photo Gallery</h3>
+            <div class="gallery_grids">
+                <div class="col-xs-4 agile-gallery_grid_main">
+                    <div class="gallery-img-grid gallery_grid1 hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/g1.jpg" class="sb" title="2017-2018 SFABL Legends Division Champs - DELTA FORCE">
+                                <figure>
+                                    <img src="images/g1.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/g2.jpg" class="sb" title="SWIFBAC 2017 Open Division Finalist - BATANG GILAS">
+                                <figure>
+                                    <img src="images/g2.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/t4.jpg" class="sb" title="SWIFBAC 2017 Open Division Champs - SWIFBAC CHICAGO ">
+                                <figure>
+                                    <img src="images/t4.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 agile-gallery_grid_main">
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/t1.jpg" class="sb" title="Warden Uy - Forward (GBS Healthcare)">
+                                <figure>
+                                    <img src="images/t1.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                                <a href="images/t3.jpg" class="sb" title="Ralph Roque - Shooting Guard (Treadmarx Auto)">
+                                <figure>
+                                    <img src="images/t3.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 agile-gallery_grid_main">
+                    <div class="gallery-img-grid gallery_grid1 hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/g4.jpg" class="sb" title="2017-2018 SFABL Masters Division Champs - TREADMARX AUTO">
+                                <figure>
+                                    <img src="images/g4.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/b9.jpg" class="sb" title="PASA 2017 - Masters Division">
+                                <figure>
+                                    <img src="images/b9.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/t5.jpg" class="sb" title="Jed Apat - Seniors Division Finals MVP (SWIFBAC 2017)">
+                                <figure>
+                                    <img src="images/t5.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //gallery -->
+    <!--events -->
+  
+     <div class="services text-center section" id="events" style="background-color:#1a1a1a">
+        <div class="container" style="background-color:#1a1a1a">
+                <div class="about-bot-grid-sec">
+                <div class="about-middle-pos">
+                    <h2>Events</h2>
+                    <p>Yes, we're busy!</p>
+                </div>
+                <div class="about-section">
+                    <div class="col-md-4 col-sm-6  abg1">
+
+                    </div>
+                    <div class="col-md-8 col-sm-6 wthree-sec-about">
+                        <h4 class="bot-grid1">PASA Inter-city Tournament</h4>
+                        <p class="bot-gridtxt">July 7 & 8 | Hosted by PABL BALTIMORE | SWIFBAC is proud to be hosting PASA 2019!</p>
+                    </div>
+                    <div class="clearfix"> </div>
+
+                </div>
+                <div class="col-md-8  col-sm-6 wthree-sec-about about-pos-btm">
+                    <h4 class="bot-grid-about">PASA mo, SAPATOS mo</h4>
+                    <p>A shoe drive to benefit the students and the School for Lumads (School for Indigenous people) in Lantapan, Bukidnon Philippines.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 abg2">
+                </div>
+
+                <div class="clearfix"> </div>
+            </div>
+      
+    </div>
+    </div>
+    <!-- //events -->
+
+
+
+    <!-- Commitees -->
+    <div class="explore-grid text-center section" id="comms">
+        <h3 class="title1">2018 Committee Members</h3>
+        <div class="sub-div">
+            <div class="exp-grid">
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/jojie.jpg" alt="" />
+                    <h4 class="explore-title">Jojie Tating Sr</h4>
+                </div>
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/joem.jpg" alt="" />
+                    <h4 class="explore-title">Joe Suarez</h4>
+                </div>
+                 <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/ringo.jpg" alt="" />
+                    <h4 class="explore-title">Ringo Pasano</h4>
+                </div>
+                 <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/manny.jpg" alt="" />
+                    <h4 class="explore-title">Manny Alegre</h4>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="exp-grid">
+                  <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/czar.jpg" alt="" />
+                    <h4 class="explore-title">Czar Encarnacion </h4>
+                </div>
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/bong.jpg" alt="" />
+                    <h4 class="explore-title">Bong Agustin</h4>
+                </div>
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/derrick.jpg" alt="" />
+                    <h4 class="explore-title">Derrick Martin</h4>
+                </div>
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/oca.jpg" alt="" />
+                    <h4 class="explore-title">Oscar Livioco</h4>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+             <div class="exp-grid">
+               <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/jun.jpg" alt="" />
+                    <h4 class="explore-title">Jun Gulmayo</h4>
+                </div>
+                  <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/martin.jpg" alt="" />
+                    <h4 class="explore-title">Martin Uy </h4>
+                </div>
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/pat.jpg" alt="" />
+                    <h4 class="explore-title">Pat Siazon</h4>
+                </div>
+                <div class="ab1 w3_agile-about-grid1">
+                   &nbsp;
+                </div>
+             
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //Commitees -->
+
+    <!-- About Us -->
+     <div class="section price-main text-center" id="about">
+        <div class="container">
+            <h3 class="title1" style="color:white">About Us</h3>
+            <div class="sub-div">
+                <div class="col-md-4 col-sm-4 plan-grid  text-center">
+                 <p>Our organization, <span style='color:#fff'>Southwest Illinois Filipino Basketball Club (SWIFBAC)</span>, is one of the perennial Filipino sports
+organization in the southwest Chicago suburbs. </p>
+                </div>
+                <div class="col-md-4 col-sm-4  plan-grid  text-center">
+
+                     <p>We are a non-profit organization which aims to provide a friendly,
+competitive and family oriented atmosphere while promoting camaraderie and sportsmanship within the Filipino
+community.</p>
+                  
+		
+                </div>
+                <div class="col-md-4 col-sm-4  plan-grid  text-center">
+                    <h4><span style='color:#fff'>Office of the Illinois Secretary of State Non-Profit TAX File Number 69158374</span></h4>
+                     <br />
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+         <div class="clearfix"> </div>
+         <br />
+          <br />
+    </div>
+    <!-- // About Us -->
+    
+    <!-- footer -->
+    <div class="footer-main text-center">
+        <div class="footer-grid">
+            <a href="https://www.facebook.com/profile.php?id=100014064618010">
+                <span class="fa fa-facebook-official icon" aria-hidden="true"></span>
+                <h6>like on facebook</h6>
+            </a>
+        </div>
+        <div class="footer-grid">
+            <a href="https://www.facebook.com/profile.php?id=100014064618010">
+                <span class="fa fa-twitter-square icon" aria-hidden="true"></span>
+                <h6>follow on twitter</h6>
+            </a>
+        </div>
+        <div class="footer-grid">
+            <a href="https://www.youtube.com/results?search_query=swifbac">
+                <span class="fa fa-youtube-square icon" aria-hidden="true"></span>
+                <h6>watch on youtube</h6>
+            </a>
+        </div>
+        <div class="footer-grid">
+           
+                <span class="fa fa-question-circle icon" aria-hidden="true"></span>               
+                 <h6>Send us your thoughts at swifbac@gmail.com</h6>
+           
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-copy text-center">
+                <p>© Southwest Illinois Filipino Basketball Club | Design by <b>Hex Media</b>
+                </p>
+            </div>
+        </div>
+    </div>
+<!-- //footer -->
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+    <!-- nav dropdown -->
+    <script>
+        $('ul.dropdown-menu li').hover(function () {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+        }, function () {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+        });
+    </script>
+    <!-- //nav dropdown -->
+    <!-- gallery -->
+    <script src="js/smoothbox.jquery2.js"></script>
+    <!-- //gallery -->
+    <!-- banner Slider script  -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider, #slider1").responsiveSlides({
+                auto: true,
+                nav: false,
+                speed: 1500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+    </script>
+    <!-- //banner Slider-JavaScript -->
+    <!-- Team FlexSlider -->
+    <script defer src="js/jquery.flexslider.js"></script>
+    <script>
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!-- End- Flexslider-script -->
+    <!-- Testimonials owl carousel -->
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                autoPlay: false,
+                items: 3,
+                itemsDesktop: [991, 2],
+                itemsDesktopSmall: [414, 4]
+
+            });
+        });
+    </script>
+    <!-- //Testimonials owl carousel -->
+    <!-- start-smooth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <script src="js/numscroller-1.0.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            // Upcoming schedules
+            $.getJSON("api/data/GetCurrentSchedule/0", function (data) {
+
+
+                var jsonObj = $.parseJSON(data);
+                var games = jsonObj.Games;
+                var currdt = jsonObj.CurrentDate;
+                var isGameDay = jsonObj.ShowScores;
+                var tblBody = $("#tblgames").find('tbody');
+                $("#currdate").html(currdt);
+
+                $.each(games, function (index, game) {
+
+                    if (isGameDay) {
+
+                        if ((game.HomeTeamScore + game.VisitorTeamScore) > 0) {
+
+                            if (game.IsFinal) {
+                                tblBody.append("<tr style='text-align:left'><th scope='row'>" + game.Time + "</th><td>" + game.DivisionName + "</td><td>" + game.CourtName + "</td><td>" + game.HomeTeamName + "&nbsp;(" + game.HomeTeamScore + ")<br/>" + game.VisitorTeamName + "&nbsp;(" + game.VisitorTeamScore + ") </td></tr>");
+                            }
+                            else {
+                                tblBody.append("<tr style='text-align:left'><th scope='row'>" + game.Time + "</th><td>" + game.DivisionName + "</td><td>" + game.CourtName + "</td><td>" + game.HomeTeamName + "&nbsp;(<span class='blink_me'>" + game.HomeTeamScore + "</span>)<br/>" + game.VisitorTeamName + "&nbsp;(<span class='blink_me'>" + game.VisitorTeamScore + "</span>) </td></tr>");
+                            }
+                        }
+                        else {
+
+                            tblBody.append("<tr style='text-align:left'><th scope='row'>" + game.Time + "</th><td>" + game.DivisionName + "</td><td>" + game.CourtName + "</td><td>" + game.HomeTeamName + "<br/>" + game.VisitorTeamName + "</td></tr>");
+
+                        }
+
+                    }
+                    else {
+                        tblBody.append("<tr style='text-align:left'><th scope='row'>" + game.Time + "</th><td>" + game.DivisionName + "</td><td>" + game.CourtName + "</td><td>" + game.HomeTeamName + " <br/> " + game.VisitorTeamName + "</td></tr>");
+                    }
+                });
+            });
+
+            //LEGENDS
+            $.getJSON("api/data/GetTeamStandings/12", function (data) {
+
+                var jsonObj = $.parseJSON(data);
+                var tblBody = $("#tblStandings").find('tbody');
+
+                tblBody.append("<tr style='text-align:left; color:#ff9900; background-color:#1a0f00'><td colspan='3'><h3>LEGENDS</h3></td><td style='text-align:right'><button type='button' class='btn btn-primary' id='legendshow'>+</button></td></tr>");
+                tblBody.append("<tr class='legendrow' style='background-color:#e68600'><th scope='col'>Team</th> <th scope='col'>Win</th> <th scope='col'>Loss</th> <th scope='col'>Diff</th> </tr>");
+                $.each(jsonObj, function (index, team) {
+                    tblBody.append("<tr class='legendrow'><th scope='row'>" + team.Name + "</th><td>" + team.Win + "</td><td>" + team.Loss + "</td><td>" + team.Differential + "</td></tr>");
+                });
+
+                $("#legendshow").click(function () {
+                    $(".legendrow").toggle();
+
+                    if ($(".legendrow").is(":visible")) {
+
+                        $("#legendshow").text("-")
+
+                    } else {
+
+
+                        $("#legendshow").text("+")
+                    }
+
+                });
+                $(".legendrow").hide();
+
+            });
+
+            //EXECUTIVES
+            $.getJSON("api/data/GetTeamStandings/13", function (data) {
+
+                var jsonObj = $.parseJSON(data);
+                var tblBody = $("#tblStandings").find('tbody');
+                tblBody.append("<tr style='text-align:left; color:#ff9900; background-color:#1a0f00'><td colspan='3'><h3>EXECUTIVES</h3></td><td style='text-align:right'><button type='button' class='btn btn-primary' id='execshow'>+</button></td></tr>");
+                tblBody.append("<tr class='execrow' style='background-color:#e68600'><th scope='col'>Team</th> <th scope='col'>Win</th> <th scope='col'>Loss</th> <th scope='col'>Diff</th> </tr>");
+                $.each(jsonObj, function (index, team) {
+                    tblBody.append("<tr class='execrow' ><th scope='row'>" + team.Name + "</th><td>" + team.Win + "</td><td>" + team.Loss + "</td><td>" + team.Differential + "</td></tr>");
+                });
+
+                $("#execshow").click(function () {
+                    $(".execrow").toggle();
+
+
+                    if ($(".execrow").is(":visible")) {
+
+                        $("#execshow").text("-")
+
+                    } else {
+
+
+                        $("#execshow").text("+")
+                    }
+
+                });
+
+                $(".execrow").hide();
+            });
+
+            //MASTERS
+            $.getJSON("api/data/GetTeamStandings/11", function (data) {
+
+                var jsonObj = $.parseJSON(data);
+                var tblBody = $("#tblStandings").find('tbody');
+                tblBody.append("<tr style='text-align:left; color:#ff9900; background-color:#1a0f00'><td colspan='3'><h3>MASTERS</h3></td><td style='text-align:right'><button type='button' class='btn btn-primary' id='mastershow'>+</button></td></tr>");
+                tblBody.append("<tr class='masterrow' style='background-color:#e68600'><th scope='col'>Team</th> <th scope='col'>Win</th> <th scope='col'>Loss</th> <th scope='col'>Diff</th> </tr>");
+                $.each(jsonObj, function (index, team) {
+                    tblBody.append("<tr class='masterrow'><th scope='row'>" + team.Name + "</th><td>" + team.Win + "</td><td>" + team.Loss + "</td><td>" + team.Differential + "</td></tr>");
+                });
+
+                $("#mastershow").click(function () {
+                    $(".masterrow").toggle();
+
+
+
+                    if ($(".masterrow").is(":visible")) {
+
+                        $("#mastershow").text("-")
+
+                    } else {
+
+
+                        $("#mastershow").text("+")
+                    }
+
+                });
+                $(".masterrow").hide();
+            });
+
+
+
+            //OPEN
+            $.getJSON("api/data/GetTeamStandings/8", function (data) {
+
+                var jsonObj = $.parseJSON(data);
+                var tblBody = $("#tblStandings").find('tbody');
+                tblBody.append("<tr style='text-align:left; color:#ff9900; background-color:#1a0f00'><td colspan='3'><h3>OPEN</h3></td><td style='text-align:right'><button type='button' class='btn btn-primary' id='openshow'>+</button></td></tr>");
+                tblBody.append("<tr class='openrow' style='background-color:#e68600'><th scope='col'>Team</th> <th scope='col'>Win</th> <th scope='col'>Loss</th> <th scope='col'>Diff</th> </tr>");
+                $.each(jsonObj, function (index, team) {
+                    tblBody.append("<tr class='openrow' ><th scope='row'>" + team.Name + "</th><td>" + team.Win + "</td><td>" + team.Loss + "</td><td>" + team.Differential + "</td></tr>");
+                });
+
+                $("#openshow").click(function () {
+                    $(".openrow").toggle();
+
+
+                    if ($(".openrow").is(":visible")) {
+
+                        $("#openshow").text("-")
+
+                    } else {
+
+
+                        $("#openshow").text("+")
+                    }
+
+                });
+
+                $(".openrow").hide();
+            });
+
+
+            //OPEN
+            $.getJSON("api/data/GetTeamStandings/6", function (data) {
+
+                var jsonObj = $.parseJSON(data);
+                var tblBody = $("#tblStandings").find('tbody');
+                tblBody.append("<tr style='text-align:left; color:#ff9900; background-color:#1a0f00'><td colspan='3'><h3>JUVENILE</h3></td><td style='text-align:right'><button type='button' class='btn btn-primary' id='juveshow'>+</button></td></tr>");
+                tblBody.append("<tr class='juverow' style='background-color:#e68600'><th scope='col'>Team</th> <th scope='col'>Win</th> <th scope='col'>Loss</th> <th scope='col'>Diff</th> </tr>");
+                $.each(jsonObj, function (index, team) {
+                    tblBody.append("<tr class='juverow' ><th scope='row'>" + team.Name + "</th><td>" + team.Win + "</td><td>" + team.Loss + "</td><td>" + team.Differential + "</td></tr>");
+                });
+
+                $("#juveshow").click(function () {
+                    $(".juverow").toggle();
+
+
+                    if ($(".juverow").is(":visible")) {
+
+                        $("#juveshow").text("-")
+
+                    } else {
+
+
+                        $("#juveshow").text("+")
+                    }
+
+                });
+
+                $(".juverow").hide();
+            });
+
+
+        });      //jquery
+
+    </script>
+</body>
+
+</html>

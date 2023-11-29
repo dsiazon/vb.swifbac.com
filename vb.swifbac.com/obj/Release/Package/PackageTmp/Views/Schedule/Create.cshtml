@@ -1,0 +1,87 @@
+﻿@model vb.swifbac.com.Models.ScheduleModel
+@{
+    ViewBag.Title = "Create Schedules";
+}
+<style>
+    .editor-field-score {
+        width: 30px;
+    }
+
+    .table-striped > tr:nth-child(odd) {
+        background-color: red;
+    }
+</style>
+<h2>SCHEDULES FOR [@Model.TargetDate.ToShortDateString()]</h2>
+<div class="panel panel-default">
+
+    @if (Model.IsEditable)
+    {
+        using (@Html.BeginForm("Update", "Schedule", FormMethod.Post))
+        {
+            @Html.HiddenFor(x => x.TargetWeek);
+            <table class="table table-striped">
+                <thead>
+                    <tr style="font-size:15px; font-weight:bold; background-color:bisque">
+                        <td>Game Number</td>
+                        <td>Game Time</td>
+                        <td>Division</td>
+                        <td>Court</td>
+                        <td>Home Team</td>
+                        <td>Visitor Team</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </thead>
+                <tr><td>&nbsp;</td></tr>
+                @Html.EditorFor(m => m.Games, new { GameTimes = Model.GameTimes, Divisions = Model.Divisions, Courts = Model.Courts, Teams = Model.Teams })
+            </table>
+
+            <br />
+
+            <input type="submit" value="Save" />
+        }
+    }
+    else
+    {
+<table class="table table-striped">
+    <thead>
+        <tr style="font-size:15px; font-weight:bold; background-color:bisque">            
+            <td>Game Time</td>
+            <td>Division</td>
+            <td>Court</td>
+            <td>Home Team</td>
+            <td>Visitor Team</td>
+            <td>&nbsp;</td>
+        </tr>
+    </thead>
+    <tr><td>&nbsp;</td></tr>
+
+    @foreach (var game in Model.Games.Where(x=> x.HomeTeamScore > 0).ToList())
+    {
+        <tr>
+            <td>
+                @game.Time 
+            </td>
+            <td>
+                @game.CourtName 
+            </td>
+            <td>
+                @game.DivisionName 
+            </td>
+            <td>
+
+                @game.HomeTeamName  (@game.HomeTeamScore)
+            </td>
+            <td>
+                @game.VisitorTeamName (@game.VisitorTeamScore)
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>            
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+    }
+
+
+</table>
+
+        <br />
+    }
+</div>
