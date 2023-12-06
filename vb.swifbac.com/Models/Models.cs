@@ -89,8 +89,8 @@ namespace vb.swifbac.com.Models
         public string ContactPhone { get; set; }
         public string EmailAddress { get; set; }
         public string Jerseysize { get; set; }
-
         public string Comments { get; set; }
+        
 
         public IEnumerable<SelectListItem> Divisions
         {
@@ -175,5 +175,32 @@ namespace vb.swifbac.com.Models
 
         }
     }
+    
+    public class TeamRegistration
+    {
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
+        public string ContactPhone { get; set; }
+        public string Email { get; set; }
+        public string Comments { get; set; }
+        public string Player1Name { get; set; }
+        public string Player2Name { get; set; }
+        public string Player3Name { get; set; }
+        public string Player4Name { get; set; }
+        public string Player5Name { get; set; }
+        public string Player6Name { get; set; }
+        public string Player7Name { get; set; }
+        public string Player8Name { get; set; }
+        public string Player9Name { get; set; }
+        public string Player10Name { get; set; }
+        public string Player11Name { get; set; }
+        public string Player12Name { get; set; }
+        public string Player13Name { get; set; }
+        public string Player14Name { get; set; }
+        public string Player15Name { get; set; }
+
+    }
+    
+
 
 }

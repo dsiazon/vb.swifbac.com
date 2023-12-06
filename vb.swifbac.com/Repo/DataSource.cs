@@ -52,6 +52,7 @@ namespace vb.swifbac.com.Repo
             db.SaveRegistration(reg.LastName, reg.FirstName, reg.Age, reg.Division, reg.ContactPhone, reg.EmailAddress, reg.Jerseysize, reg.Comments);
         }
 
+
         public void SaveRoster(Roster roster)
         {
             var db = new db.swifbacdbDataContext();

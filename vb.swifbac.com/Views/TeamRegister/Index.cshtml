@@ -1,4 +1,4 @@
-﻿@model vb.swifbac.com.Models.Registration
+﻿@model vb.swifbac.com.Models.TeamRegistration
 @{
     ViewBag.Title = "SWIFBAC VOLLEYBALL CLUB";
 }
@@ -70,12 +70,107 @@
 
         </tr>
 
+        <tr>
+            <td>Contact Email</td>
+            <td>:</td>
+            <td>
+                @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "editor-field-data-string" } })
+            </td>
+
+        </tr>
+
 
         <tr>
-            <td style="vertical-align:top">Team Members</td>
-            <td>&nbsp;</td>
-            <td>  @Html.TextAreaFor(m => m.Comments, new { @cols = 5, @rows = 12})  </td>
+            <td><b>Team Members</b></td>
+        </tr>
+        <tr>
+            <td> Player 1 </td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player1Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
 
+        <tr>
+            <td> Player 2</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player2Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 3</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player3Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 4</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player4Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 5</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player5Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 6</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player6Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 7</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player7Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 8</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player8Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 9</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player9Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 10</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player10Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 11</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player11Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 12</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player12Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 13</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player13Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 14</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player14Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
+        </tr>
+
+        <tr>
+            <td> Player 15</td>
+            <td>:</td>
+            <td> @Html.EditorFor(m => m.Player15Name, new { htmlAttributes = new { @class = "editor-field-data-string" } })  </td>
         </tr>
     </table>
 
@@ -106,12 +201,6 @@
                 alert('Team Captain is required.')
                 valid = false;
                 $("#LastName").focus();
-            }
-
-            if ((($("#Age").val() == "") || $("#Age").val() == "0") && valid) {
-                alert('Age is required.')
-                valid = false;
-                $("#Age").focus();
             }
 
             if (($("#ContactPhone").val() == "") && valid){
